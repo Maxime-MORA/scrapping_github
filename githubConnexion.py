@@ -8,5 +8,7 @@ def githubConnect(driver, email, password, display) :
     if (display):
         if (driver.title == "GitHub"): #Verification de connexion
             print("Connecte sur le compte : " + email)
+            return True
         else:
             print("Connexion non etablie")
+            return False
